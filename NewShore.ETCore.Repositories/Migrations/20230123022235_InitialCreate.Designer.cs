@@ -12,8 +12,8 @@ using NewShore.ETCore.Repositories.DataContext;
 namespace NewShore.ETCore.Repositories.Migrations
 {
     [DbContext(typeof(NewShoreContext))]
-    [Migration("20230122183921_InitCreate")]
-    partial class InitCreate
+    [Migration("20230123022235_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

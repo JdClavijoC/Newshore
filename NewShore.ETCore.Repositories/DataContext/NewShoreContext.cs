@@ -6,7 +6,7 @@
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=NewShoreDBV2");
+            optionsBuilder.UseSqlServer("Server=LAPTOP-QRG1OFAQ;Database=NewshoreDB2;Trusted_Connection=True;Encrypt=False");
         }
 
         public DbSet<CreateJourneyRouteDTO> FJourneys { get;set; }
