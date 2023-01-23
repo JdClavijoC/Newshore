@@ -30,8 +30,8 @@
         {
             localDestination = destination;
             List<NewShoreAirResponse> myFlightRaw = await service.GetNewShoreRuts();
-            JourneyFlight Journeys = new JourneyFlight();
-            JourneyRoute fJourney = new JourneyRoute();
+            JourneyFlight Journey = new JourneyFlight();
+            JourneyRoute ObcjetJourney = new JourneyRoute();
             List<Flight> flights = new List<Flight>();
 
             for (int i = 0; i < myFlightRaw.Count; i++)
@@ -73,35 +73,35 @@
             }
             if (!isCalulate && flights.Count == 0)
             {
-                Journeys = new JourneyFlight
+                Journey = new JourneyFlight
                 {
                     Origin = origin,
                     Destination = localDestination,
                     Price = 0,
-                    Status = "FALLA AL CALCULAR LA RUTA",
+                    Status = "INCREDIBLE ROUTE",
                     Flights = flights,
                 };
-                fJourney = new JourneyRoute
+                ObcjetJourney = new JourneyRoute
                 {
-                    journey = Journeys,
+                    journey = Journey,
                 };
             }
             else
             {
-                Journeys = new JourneyFlight
+                Journey = new JourneyFlight
                 {
                     Origin = origin,
                     Destination = localDestination,
                     Price = price,
-                    Status = "RUTA CALCULADA CON EXITO",
+                    Status = "CALCULATED ROUTE",
                     Flights = flights,
                 };
-                fJourney = new JourneyRoute
+                ObcjetJourney = new JourneyRoute
                 {
-                    journey = Journeys,
+                    journey = Journey,
                 };
             }
-            return fJourney;
+            return ObcjetJourney;
         }
     }
 }
