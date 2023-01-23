@@ -9,7 +9,6 @@ namespace NewShoreEntities.Interfaces.Controllers
 {
     public interface ICreateJourneyRouteController
     {
-        // Por Implementar
         ValueTask<int> CreateJourneyRoute(CreateJourneyRouteDTO journeyRoute);
     }
 }

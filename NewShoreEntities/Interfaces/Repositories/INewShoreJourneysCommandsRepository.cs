@@ -8,7 +8,6 @@ namespace NewShoreEntities.Interfaces.Repositories
 {
     public interface INewShoreJourneysCommandsRepository
     {
-        // Por Implementar
         //ValueTask CreateJourney(JourneyAggregate journey);
     }
 }

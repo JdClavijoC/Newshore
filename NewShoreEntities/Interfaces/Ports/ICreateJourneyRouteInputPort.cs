@@ -2,7 +2,6 @@
 {
     public interface ICreateJourneyRouteInputPort
     {
-        // Por Implementar
         ValueTask Handle(ICreateJourneyRouteInputPort jouneyRouteDTO);
     }
 }
