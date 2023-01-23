@@ -16,6 +16,16 @@
         }
 
         [HttpGet]
+        [Route("getData")]
+        public async Task<List<NewShoreAirResponse>> getInfo()
+        {
+            List<NewShoreAirResponse>? myFlightRaw = await service.GetNewShoreRuts();
+            if (myFlightRaw == null) return null;
+            return new List<NewShoreAirResponse>(myFlightRaw);
+
+        }
+
+        [HttpGet]
         [Route("calculateRoute")]
         public async Task<JourneyRoute> listClientPost(string origin, string destination)
         {
