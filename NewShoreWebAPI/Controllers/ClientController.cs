@@ -1,7 +1,7 @@
 ﻿namespace NewShoreWebAPI.Controllers
 {
     [ApiController]
-    [Route("API/client")]
+    [Route("api/client")]
     public class ClientController : ControllerBase
     {
         public readonly NewShoreBackEndService service;
@@ -16,7 +16,6 @@
         }
 
         [HttpGet]
-        [Route("getData")]
         public async Task<List<NewShoreAirResponse>> getInfo()
         {
             List<NewShoreAirResponse> myFlightRaw = await service.GetNewShoreRuts();
