@@ -1,7 +1,5 @@
 ﻿namespace NewShore.ETCore.Repositories.DataContext
 {
-    // Add-Migration InitialCreate -p NewShore.ETCore.Repositories -s NewShore.ETCore.Repositories -c NewShoreContext
-    // Update-Database -p NewShore.ETCore.Repositories -s NewShore.ETCore.Repositories -c NewShoreContext
     internal class NewShoreContext: DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

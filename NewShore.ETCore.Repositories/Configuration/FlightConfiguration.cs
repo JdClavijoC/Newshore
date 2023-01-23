@@ -1,6 +1,4 @@
-﻿using NewShoreEntities.DTOs;
-
-namespace NewShore.ETCore.Repositories.Configuration
+﻿namespace NewShore.ETCore.Repositories.Configuration
 {
     internal class FlightConfiguration : IEntityTypeConfiguration<CreateFlightDTO>
     {

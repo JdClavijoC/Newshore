@@ -1,5 +1,4 @@
-﻿
-namespace NewShore.ETCore.Repositories.Configuration
+﻿namespace NewShore.ETCore.Repositories.Configuration
 {
     internal class JourneyFlightConfiguration : IEntityTypeConfiguration<CreateJourneyFlightDTO>
     {

@@ -45,7 +45,6 @@
                     {
                         if (myFlightRaw[i + 1].DepartureStation == destination)
                         {
-
                             flights.Add(
                                 new Flight
                                 {

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace NewShoreEntities.DTOs
+﻿namespace NewShoreEntities.DTOs
 {
     public class CreateFlightDTO
     {
