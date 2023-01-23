@@ -19,7 +19,7 @@
         [Route("getData")]
         public async Task<List<NewShoreAirResponse>> getInfo()
         {
-            List<NewShoreAirResponse>? myFlightRaw = await service.GetNewShoreRuts();
+            List<NewShoreAirResponse> myFlightRaw = await service.GetNewShoreRuts();
             if (myFlightRaw == null) return null;
             return new List<NewShoreAirResponse>(myFlightRaw);
 
